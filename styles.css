@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Impact, sans-serif;
+    background-image: url('bg.PNG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+ 
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.countdown {
+    font-size: 3rem;
+    color: #000;
+    background-color: red;
+    padding: 10px;
+    margin: 150px 0;
+}
+
+.redirect-button {
+    display: inline-block;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.288);
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-text {
+    align-items: end;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 150px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 50%;
+    }
+}
+
+.timer__items {
+    display: flex;
+    font-size: 60px;
+  }
+  .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
+  .timer {
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: rgba(56, 56, 56, 0.397);
+    padding: 10px;
+    margin: 170px 100px 0px 100px;
+}
